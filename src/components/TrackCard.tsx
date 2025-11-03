@@ -133,7 +133,7 @@ export const TrackCard = ({
           
           {/* Audio format indicator */}
           <span className="text-xs text-muted-foreground uppercase tracking-wider">
-            MP3
+            {audioUrl.split('.').pop()}
           </span>
         </div>
       </div>

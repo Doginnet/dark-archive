@@ -28,23 +28,23 @@ interface Track {
 const tracks: Track[] = [
   {
     id: "1",
-    title: "NOCTURNAL PULSE",
-    description: "Deep techno rhythms colliding with ambient darkness. 138 BPM journey through industrial soundscapes.",
-    audioUrl: "/audio/track-1.mp3", // Place your audio file at public/audio/track-1.mp3
+    title: "Ethereal Echoes",
+    description: "A haunting melody that fades in and out, creating a sense of spaciousness and mystery.",
+    audioUrl: "/audio/1-2.wav",
     imageUrl: trackCover1,
   },
   {
     id: "2",
-    title: "VOID FREQUENCIES",
-    description: "Minimalist bass sequences echoing through empty spaces. Hypnotic progression into the unknown.",
-    audioUrl: "/audio/track-2.mp3", // Place your audio file at public/audio/track-2.mp3
+    title: "Lunar Cycles",
+    description: "A rhythmic and percussive track with a driving beat, perfect for a late-night coding session.",
+    audioUrl: "/audio/1-3.wav",
     imageUrl: trackCover2,
   },
   {
     id: "3",
-    title: "CONCRETE DREAMS",
-    description: "Brutalist sound architecture. Heavy kicks wrapped in ethereal synth layers.",
-    audioUrl: "/audio/track-3.mp3", // Place your audio file at public/audio/track-3.mp3
+    title: "Foolmoon",
+    description: "An atmospheric and ambient track with a sense of wonder and exploration.",
+    audioUrl: "/audio/foolmoon.mp3",
     imageUrl: trackCover3,
   },
 ];
