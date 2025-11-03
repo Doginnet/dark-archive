@@ -7,99 +7,132 @@ All colors MUST be HSL.
 */
 
 @layer base {
+  /* ===========================================
+     DARK TECHNO THEME - Design System Tokens
+     =========================================== */
+  
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background Colors - Deep black base */
+    --background: 220 15% 5%; /* Almost black with slight grey tone */
+    --foreground: 0 0% 100%; /* Pure white for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card & Surface Colors - Glassmorphic dark surfaces */
+    --card: 220 15% 10%; /* Dark grey for cards */
+    --card-foreground: 0 0% 100%; /* White text on cards */
+    --card-glass: 220 15% 15% / 0.3; /* Glassmorphic overlay with transparency */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover Colors - Matching card style */
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Colors - Deep blacks */
+    --primary: 220 15% 8%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary Colors - Slightly lighter grey */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Colors - Subdued greys */
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent Colors - NEON GREEN for highlights */
+    --accent: 120 100% 45%; /* Vibrant neon green */
+    --accent-foreground: 220 15% 5%; /* Dark text on neon */
+    --accent-glow: 120 100% 45% / 0.5; /* Glow effect for neon */
 
+    /* Destructive Colors - Keep red for errors */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border & Input Colors - Subtle dark borders */
+    --border: 220 15% 25%; /* Visible but subtle borders */
+    --input: 220 15% 15%;
+    --ring: 120 100% 45%; /* Neon green focus ring */
 
-    --radius: 0.5rem;
+    /* Border Radius - Sharp, modern edges */
+    --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Glassmorphic Effects */
+    --glass-border: 220 15% 30% / 0.2; /* Semi-transparent border */
+    --glass-backdrop: blur(12px); /* Backdrop blur strength */
+    
+    /* Sidebar (not used but defined for completeness) */
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 220 15% 12%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 100% 45%;
+    --sidebar-accent-foreground: 220 15% 5%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 120 100% 45%;
   }
 
+  /* Dark mode (default for this theme, but keeping structure) */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 220 15% 5%;
+    --foreground: 0 0% 100%;
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 220 15% 8%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 120 100% 45%;
+    --accent-foreground: 220 15% 5%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 25%;
+    --input: 220 15% 15%;
+    --ring: 120 100% 45%;
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 220 15% 12%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 120 100% 45%;
+    --sidebar-accent-foreground: 220 15% 5%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 120 100% 45%;
   }
 }
 
 @layer base {
+  /* ===========================================
+     BASE STYLES - Global element styling
+     =========================================== */
+  
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground;
+    /* Dark gradient background for depth */
+    background: linear-gradient(135deg, hsl(220 15% 5%) 0%, hsl(220 15% 8%) 100%);
+    background-attachment: fixed;
+  }
+
+  /* Glassmorphic utility class for cards */
+  .glass-card {
+    background: hsl(var(--card) / 0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.2);
+  }
+
+  /* Neon glow effect for accents */
+  .neon-glow {
+    text-shadow: 0 0 10px hsl(var(--accent) / 0.8),
+                 0 0 20px hsl(var(--accent) / 0.5),
+                 0 0 30px hsl(var(--accent) / 0.3);
+  }
+
+  /* Smooth transitions for interactive elements */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
