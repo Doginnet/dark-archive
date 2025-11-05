@@ -4,6 +4,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import HexStepPage from "./pages/Hex-Step";
+import MellowTapesPage from "./pages/Mellow-Tapes";
+import DarkCutPage from "./pages/Dark-Cut";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -17,6 +20,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/hex-step" element={<HexStepPage />} /> 
+          <Route path="/mellow-tapes" element={<MellowTapesPage />} /> 
+          <Route path="/dark-cut" element={<DarkCutPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

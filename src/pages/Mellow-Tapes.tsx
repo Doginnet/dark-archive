@@ -5,10 +5,10 @@
    =========================================== */
 
 import { TrackCard } from "@/components/TrackCard";
-import trackCover1 from "@/assets/track-cover-1.jpg";
-import trackCover2 from "@/assets/track-cover-2.jpg";
-import trackCover3 from "@/assets/track-cover-3.jpg";
-import trackCover4 from "@/assets/track-cover-7.jpg";
+import trackCover1 from "@/assets/track-cover-5.jpg";
+import trackCover2 from "@/assets/track-cover-6.jpg";
+import trackCover3 from "@/assets/track-cover-4.jpg";
+import trackCover4 from "@/assets/track-cover-9.jpg";
 
 /* ===========================================
    TRACK DATA STRUCTURE
@@ -29,9 +29,9 @@ interface Track {
 const tracks: Track[] = [
   {
     id: "1",
-    title: "Ethereal Echoes",
+    title: "Tidal Break",
     description: "A haunting melody that fades in and out, creating a sense of spaciousness and mystery.",
-    audioUrl: "/audio/1-2.mp3",
+    audioUrl: "/audio/mellow-tapes/131_bpm_ver.mp3",
     imageUrl: trackCover1,
   },
   {
@@ -61,15 +61,15 @@ const tracks: Track[] = [
    MAIN COMPONENT RENDER
    =========================================== */
 
-const Index = () => {
+const MellowTapesPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div data-theme="mellow-tapes" className="min-h-screen bg-background">
       {/* Header Section - Fixed positioning */}
       <header className="sticky top-0 z-50 glass-card border-b border-border/20 backdrop-blur-xl">
         <div className="container mx-auto px-4 py-6">
           {/* Main Title - Neon green with glow effect */}
           <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
-            DARK ARCHIVE
+            MELLOW TAPES
           </h1>
           {/* Subtitle - White text */}
           <p className="text-foreground/70 mt-2 text-sm md:text-base tracking-wide">
@@ -140,4 +140,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default MellowTapesPage;

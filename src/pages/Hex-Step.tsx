@@ -63,11 +63,11 @@ const tracks: Track[] = [
 
 const HexStepPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div data-theme="hex-step" className="min-h-screen bg-background">
       {/* Header Section - Fixed positioning */}
       <header className="sticky top-0 z-50 glass-card border-b border-border/20 backdrop-blur-xl">
         <div className="container mx-auto px-4 py-6">
-          {/* Main Title - Neon green with glow effect */}
+          {/* Main Title - Neon cyan with glow effect */}
           <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
             HEX STEP
           </h1>
@@ -139,4 +139,4 @@ const HexStepPage = () => {
   );
 };
 
-export default Index;
+export default HexStepPage;

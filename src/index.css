@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
+  /* FONT DEFINITIONS */
   @font-face {
     font-family: 'Geist';
     src: url('/fonts/geist/static/Geist-Thin.ttf') format('truetype');
@@ -28,148 +25,59 @@ All colors MUST be HSL.
     font-style: normal;
   }
 
+  /* ===========================================
+     THEMING - CSS VARIABLES
+     =========================================== */
 
-:root {
-    /* Core Background Colors - Deep black base */
-    --background: 220 15% 5%; /* Almost black with slight grey tone */
-    --foreground: 0 0% 100%; /* Pure white for text */
-
-    /* Card & Surface Colors - Glassmorphic dark surfaces */
-    --card: 220 15% 10%; /* Dark grey for cards */
-    --card-foreground: 0 0% 100%; /* White text on cards */
-    --card-glass: 220 15% 15% / 0.3; /* Glassmorphic overlay with transparency */
-
-    /* Popover Colors - Matching card style */
-    --popover: 220 15% 10%;
-    --popover-foreground: 0 0% 100%;
-
-    /* Primary Colors - Deep blacks */
-    --primary: 220 15% 8%;
-    --primary-foreground: 0 0% 100%;
-
-    /* Secondary Colors - Slightly lighter grey */
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 0 0% 100%;
-
-    /* Muted Colors - Subdued greys */
-    --muted: 220 15% 20%;
-    --muted-foreground: 0 0% 70%;
-
-    /* Accent Colors - NEON GREEN for highlights */
-    --accent: 190 100% 45%; /* Vibrant neon green */
-    --accent-foreground: 220 15% 5%; /* Dark text on neon */
-    --accent-glow: 120 100% 45% / 0.5; /* Glow effect for neon */
-
-    /* Destructive Colors - Keep red for errors */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    /* Border & Input Colors - Subtle dark borders */
-    --border: 220 15% 25%; /* Visible but subtle borders */
-    --input: 220 15% 15%;
-    --ring: 120 100% 45%; /* Neon green focus ring */
-
-    /* Border Radius - Sharp, modern edges */
-    --radius: 0.25rem;
-
-    /* Glassmorphic Effects */
-    --glass-border: 220 15% 30% / 0.2; /* Semi-transparent border */
-    --glass-backdrop: blur(12px); /* Backdrop blur strength */
-    
-    /* Sidebar (not used but defined for completeness) */
-    --sidebar-background: 220 15% 8%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 220 15% 12%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 120 100% 45%;
-    --sidebar-accent-foreground: 220 15% 5%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 120 100% 45%;
-
-    /* DATA THEMES */
-
-    /* Hex Step Data Theme */
-    [data-theme="hex-step"] {
-      --pimary: 0 50% 45%; /* primary dunno what for yet */
-      --accent: 190 100% 45%; /* neon cyan for text */
-      --accent-glow: 190 100% 45% / 0.5;
-      --accent-foreground: 220 15% 5%;
-      --button-bg: hsl(var(--accent-foreground));
-      --button-fg: hsl(var(--accent));
-      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
-      --button-click: hsl(var(--primary)); /* button fill on click */
-      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
-    }
-    
-    /* Mellow Tapes */
-    [data-theme="mellow-tapes"] {
-      --pimary: 0 50% 45%; /* primary dunno what for yet */
-      --accent: 210 60% 45%; /* deep blue for text */
-      --accent-glow: 210 60% 45% / 0.5;
-      --accent-foreground: 220 15% 5%;
-      --button-bg: hsl(var(--accent-foreground));
-      --button-fg: hsl(var(--accent));
-      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
-      --button-click: hsl(var(--primary)); /* button fill on click */
-      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
-    }
-
-    /* Dark Cut */
-    [data-theme="dark-cut"] {
-      --pimary: 0 50% 45%; /* primary dunno what for yet */
-      --accent: 40 80% 45%; /* neon cyan for text */
-      --accent-glow: 40 80% 45% / 0.5;
-      --accent-foreground: 220 15% 5%;
-      --button-bg: hsl(var(--accent-foreground));
-      --button-fg: hsl(var(--accent));
-      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
-      --button-click: hsl(var(--primary)); /* button fill on click */
-      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
-    }
-    
-    /* Haunted Garrage */ 
-    [data-theme="haunted-garrage"] {
-      --pimary: 0 50% 45%; /* primary dunno what for yet */
-      --accent: 240 80% 45%; /* neon cyan for text */
-      --accent-glow: 240 80% 45% / 0.5;
-      --accent-foreground: 220 15% 5%;
-      --button-bg: hsl(var(--accent-foreground));
-      --button-fg: hsl(var(--accent));
-      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
-      --button-click: hsl(var(--primary)); /* button fill on click */
-      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
-    }
-  }
-
-  /* Dark mode (default for this theme, but keeping structure) */
-  .dark {
+  /* DEFAULT THEME (Cyan / Hex Step) */
+  :root {
+    /* Base Layout & Surface Colors (Shared across all themes) */
     --background: 220 15% 5%;
     --foreground: 0 0% 100%;
     --card: 220 15% 10%;
     --card-foreground: 0 0% 100%;
     --popover: 220 15% 10%;
     --popover-foreground: 0 0% 100%;
-    --primary: 220 15% 8%;
-    --primary-foreground: 0 0% 100%;
     --secondary: 220 15% 15%;
     --secondary-foreground: 0 0% 100%;
     --muted: 220 15% 20%;
     --muted-foreground: 0 0% 70%;
-    --accent: 120 100% 45%;
-    --accent-foreground: 220 15% 5%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
     --border: 220 15% 25%;
     --input: 220 15% 15%;
-    --ring: 120 100% 45%;
-    --sidebar-background: 220 15% 8%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 220 15% 12%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 190 100% 45%;
-    --sidebar-accent-foreground: 220 15% 5%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 190 100% 45%;
+    --radius: 0.25rem;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Default Theme-specific Colors */
+    --primary: 190 90% 40%;
+    --primary-foreground: 220 15% 5%;
+    --accent: 190 100% 45%;
+    --accent-foreground: 220 15% 5%;
+    --ring: 190 100% 45%;
+  }
+
+  /* THEME 2: Mellow Tapes */
+  [data-theme="mellow-tapes"] {
+    --primary: 210 50% 40%;
+    --accent: 210 60% 45%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 210 60% 45%;
+  }
+
+  /* THEME 3: Dark Cut */
+  [data-theme="dark-cut"] {
+    --primary: 40 70% 40%;
+    --accent: 40 80% 45%;
+    --accent-foreground: 0 0% 0%;
+    --ring: 40 80% 45%;
+  }
+  
+  /* THEME 4: Haunted Garage */ 
+  [data-theme="haunted-garrage"] {
+    --primary: 240 70% 40%;
+    --accent: 240 80% 45%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 240 80% 45%;
   }
 }
 
@@ -183,7 +91,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     /* Dark gradient background for depth */
     background: linear-gradient(135deg, hsl(220 15% 5%) 0%, hsl(220 15% 8%) 100%);
     background-attachment: fixed;
@@ -194,23 +102,17 @@ All colors MUST be HSL.
     background: hsl(var(--card) / 0.3);
     backdrop-filter: blur(12px);
     border: 1px solid hsl(var(--border) / 0.2);
-
   }
 
   /* Neon glow effect for accents */
   .neon-glow {
     text-shadow: 0 0 10px hsl(var(--accent) / 0.8),
-                 10px 7px 32px hsl(190deg 50 50 / 0.9), /* Remove later... maybe */
-		             0 0 20px hsl(var(--accent) / 0.5),
+                 0 0 20px hsl(var(--accent) / 0.5),
                  0 0 30px hsl(var(--accent) / 0.3);
   }
 
   /* Smooth transitions for interactive elements */
   .transition-smooth {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .text-accent {
-  color: hsl(190deg 50% 50%) !important; 
   }
 }
