@@ -85,6 +85,60 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 220 15% 5%;
     --sidebar-border: 220 15% 25%;
     --sidebar-ring: 120 100% 45%;
+
+    /* DATA THEMES */
+
+    /* Hex Step Data Theme */
+    [data-theme="hex-step"] {
+      --pimary: 0 50% 45%; /* primary dunno what for yet */
+      --accent: 190 100% 45%; /* neon cyan for text */
+      --accent-glow: 190 100% 45% / 0.5;
+      --accent-foreground: 220 15% 5%;
+      --button-bg: hsl(var(--accent-foreground));
+      --button-fg: hsl(var(--accent));
+      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
+      --button-click: hsl(var(--primary)); /* button fill on click */
+      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
+    }
+    
+    /* Mellow Tapes */
+    [data-theme="mellow-tapes"] {
+      --pimary: 0 50% 45%; /* primary dunno what for yet */
+      --accent: 210 60% 45%; /* deep blue for text */
+      --accent-glow: 210 60% 45% / 0.5;
+      --accent-foreground: 220 15% 5%;
+      --button-bg: hsl(var(--accent-foreground));
+      --button-fg: hsl(var(--accent));
+      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
+      --button-click: hsl(var(--primary)); /* button fill on click */
+      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
+    }
+
+    /* Dark Cut */
+    [data-theme="dark-cut"] {
+      --pimary: 0 50% 45%; /* primary dunno what for yet */
+      --accent: 40 80% 45%; /* neon cyan for text */
+      --accent-glow: 40 80% 45% / 0.5;
+      --accent-foreground: 220 15% 5%;
+      --button-bg: hsl(var(--accent-foreground));
+      --button-fg: hsl(var(--accent));
+      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
+      --button-click: hsl(var(--primary)); /* button fill on click */
+      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
+    }
+    
+    /* Haunted Garrage */ 
+    [data-theme="haunted-garrage"] {
+      --pimary: 0 50% 45%; /* primary dunno what for yet */
+      --accent: 240 80% 45%; /* neon cyan for text */
+      --accent-glow: 240 80% 45% / 0.5;
+      --accent-foreground: 220 15% 5%;
+      --button-bg: hsl(var(--accent-foreground));
+      --button-fg: hsl(var(--accent));
+      --button-hover-glow: 0 0 25px hsl(var(accent-glow)); /* Increased glow on hover */
+      --button-click: hsl(var(--primary)); /* button fill on click */
+      --button-focused: hsl(var(--primary)); /* Outlines and borders only when on playback */
+    }
   }
 
   /* Dark mode (default for this theme, but keeping structure) */

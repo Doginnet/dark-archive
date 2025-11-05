@@ -20,6 +20,14 @@ that will interchangably stop playback of other tracks that interfere with the c
 	* Haunted Garrage
 	* Mellow Tapes (House, Melodic Techno)
 
+#### Component features
+
+- Improved buttons
+	- fix the play button font-size
+- Horizontal cards for genre pages
+- breadcrumbs
+- Some boilerplate animations
+
 ## Tools and Packages
 
 - Tone.js 

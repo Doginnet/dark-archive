@@ -68,7 +68,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 glass-card border-b border-border/20 backdrop-blur-xl">
         <div className="container mx-auto px-4 py-6">
           {/* Main Title - Neon green with glow effect */}
-          <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-thin text-accent neon-glow tracking-tight">
             DARK ARCHIVE
           </h1>
           {/* Subtitle - White text */}
@@ -82,7 +82,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-12">
         {/* Introduction Section */}
         <section className="mb-16 max-w-3xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl font-thin text-foreground mb-4">
             Sound Collection
           </h2>
           <p className="text-foreground/80 leading-relaxed mb-4">
