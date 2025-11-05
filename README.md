@@ -1,73 +1,30 @@
-# Welcome to your Lovable project
+## Intro
 
-## Project info
+This is going to be part of my complete music portfolio web page, this
+will be put into sketches module/component later on, but for now it's gonna be a standalone version
+of my unfinished or finished, but not sorted into separate projects tracks
+The idea will be to make an interactive mix constructor of my sketches, so that the user
+might chose what stems, loops, or layers to add and to remove on the fly, making their 
+own unique mixes of the composition.
 
-**URL**: https://lovable.dev/projects/102c541a-876a-4d6c-b67a-e5cac2d0fd25
+## Features to implement
 
-## How can I edit this code?
+- A player controller for the catalog track preview and for certain internal loops/stems
+that will interchangably stop playback of other tracks that interfere with the current track's playback (e.g. in the catalog playing different track will stop the playback of the previous one) 
+- The master clock feature that will synchronize internal tracks of a composition
+- Some gif/audiowave visualisations on the track's card during playback
+- Main index catalog page containing different sketch genre pojects
+- Current projects so far are (names may change in the future): 
+	* Hex Step (DnB, Jungle music)
+	* Dark Cut (dark ambient / industrial techno)
+	* Haunted Garrage
+	* Mellow Tapes (House, Melodic Techno)
 
-There are several ways of editing your application.
+## Tools and Packages
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/102c541a-876a-4d6c-b67a-e5cac2d0fd25) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+- Tone.js 
+- Canvas
 - React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/102c541a-876a-4d6c-b67a-e5cac2d0fd25) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Tailwind
+- lucide-react
+- shadnc

@@ -101,7 +101,7 @@ export const TrackCard = ({
       {/* Track Information Section */}
       <div className="p-6 space-y-3">
         {/* Track Title - Neon green accent */}
-        <h3 className="text-xl font-bold text-accent neon-glow tracking-wide">
+        <h3 className="font-sans font-thin text-xl text-accent neon-glow tracking-wide">
           {title}
         </h3>
         

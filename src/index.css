@@ -7,11 +7,29 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  /* ===========================================
-     DARK TECHNO THEME - Design System Tokens
-     =========================================== */
-  
-  :root {
+  @font-face {
+    font-family: 'Geist';
+    src: url('/fonts/geist/static/Geist-Thin.ttf') format('truetype');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geist';
+    src: url('/fonts/geist/static/Geist-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Geist';
+    src: url('/fonts/geist/static/Geist-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+
+
+:root {
     /* Core Background Colors - Deep black base */
     --background: 220 15% 5%; /* Almost black with slight grey tone */
     --foreground: 0 0% 100%; /* Pure white for text */
@@ -38,7 +56,7 @@ All colors MUST be HSL.
     --muted-foreground: 0 0% 70%;
 
     /* Accent Colors - NEON GREEN for highlights */
-    --accent: 120 100% 45%; /* Vibrant neon green */
+    --accent: 190 100% 45%; /* Vibrant neon green */
     --accent-foreground: 220 15% 5%; /* Dark text on neon */
     --accent-glow: 120 100% 45% / 0.5; /* Glow effect for neon */
 
@@ -94,10 +112,10 @@ All colors MUST be HSL.
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 220 15% 12%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 120 100% 45%;
+    --sidebar-accent: 190 100% 45%;
     --sidebar-accent-foreground: 220 15% 5%;
     --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 120 100% 45%;
+    --sidebar-ring: 190 100% 45%;
   }
 }
 
@@ -128,13 +146,17 @@ All colors MUST be HSL.
   /* Neon glow effect for accents */
   .neon-glow {
     text-shadow: 0 0 10px hsl(var(--accent) / 0.8),
-                 10px 7px 22px hsl(120deg 50 50 / 0.9), /* Remove later... maybe */
-		 0 0 20px hsl(var(--accent) / 0.5),
+                 10px 7px 32px hsl(190deg 50 50 / 0.9), /* Remove later... maybe */
+		             0 0 20px hsl(var(--accent) / 0.5),
                  0 0 30px hsl(var(--accent) / 0.3);
   }
 
   /* Smooth transitions for interactive elements */
   .transition-smooth {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-accent {
+  color: hsl(190deg 50% 50%) !important; 
   }
 }
