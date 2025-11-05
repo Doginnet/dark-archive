@@ -8,6 +8,7 @@ import { TrackCard } from "@/components/TrackCard";
 import trackCover1 from "@/assets/track-cover-1.jpg";
 import trackCover2 from "@/assets/track-cover-2.jpg";
 import trackCover3 from "@/assets/track-cover-3.jpg";
+import trackCover4 from "@/assets/track-cover-7.jpg";
 
 /* ===========================================
    TRACK DATA STRUCTURE
@@ -30,14 +31,14 @@ const tracks: Track[] = [
     id: "1",
     title: "Ethereal Echoes",
     description: "A haunting melody that fades in and out, creating a sense of spaciousness and mystery.",
-    audioUrl: "/audio/1-2.wav",
+    audioUrl: "/audio/1-2.mp3",
     imageUrl: trackCover1,
   },
   {
     id: "2",
     title: "Lunar Cycles",
     description: "A rhythmic and percussive track with a driving beat, perfect for a late-night coding session.",
-    audioUrl: "/audio/1-3.wav",
+    audioUrl: "/audio/1-3.mp3",
     imageUrl: trackCover2,
   },
   {
@@ -47,6 +48,13 @@ const tracks: Track[] = [
     audioUrl: "/audio/foolmoon.mp3",
     imageUrl: trackCover3,
   },
+  {
+    id: "4",
+    title: "Anxios",
+    description: "A nervoutic beat haunted by the ghost of the underground",
+    audioUrl: "audio/Strudel.mp3",
+    imageUrl: trackCover4,
+  }
 ];
 
 /* ===========================================

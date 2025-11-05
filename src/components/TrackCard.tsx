@@ -35,7 +35,7 @@ export const TrackCard = ({
 
   // Initialize audio element on component mount
   useEffect(() => {
-    audioRef.current = new Audio(audioUrl);
+    audioRef.current = new Audio(`${import.meta.env.BASE_URL}${audioUrl}`);
     
     // Cleanup: pause and remove audio on unmount
     return () => {
