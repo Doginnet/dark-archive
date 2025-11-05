@@ -61,7 +61,7 @@ const tracks: Track[] = [
    MAIN COMPONENT RENDER
    =========================================== */
 
-const Index = () => {
+const HexStepPage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section - Fixed positioning */}
@@ -69,11 +69,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           {/* Main Title - Neon green with glow effect */}
           <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
-            DARK ARCHIVE
+            HEX STEP
           </h1>
           {/* Subtitle - White text */}
           <p className="text-foreground/70 mt-2 text-sm md:text-base tracking-wide">
-            Cursed loops / Haunted soundscapes
+            Cursed loops / Hex Step
           </p>
         </div>
       </header>
@@ -86,12 +86,11 @@ const Index = () => {
             Sound Collection
           </h2>
           <p className="text-foreground/80 leading-relaxed mb-4">
-            A curated archive of dark techno compositions. Each track is built
-            from industrial elements, minimalist rhythms, and atmospheric textures.
+            A curated archive of cursed drum'n'bass, 2-step jungle beats. Each track is built
+            from haunted breaks, echoing reminiscent melodies, and hazy atmospheric pad textures.
           </p>
           <p className="text-sm text-muted-foreground italic">
-            All tracks are accessible via direct URI links for external use.
-            Right-click on any track card to inspect audio URLs.
+            To re-arrange a compositin simply click on the "Mix" button.
           </p>
         </section>
 
