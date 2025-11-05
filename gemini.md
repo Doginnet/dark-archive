@@ -39,3 +39,7 @@ When the user is ready to continue, I should be prepared to:
 *   **The user is a musician, so they have a good understanding of the musical concepts involved.** I should use clear and concise language when explaining technical concepts.
 *   **The user is also a developer, so they are comfortable with code.** I should provide code examples that are well-structured and easy to understand.
 *   **The user is open to using libraries like Tone.js to simplify the development process.** I should be prepared to provide guidance on how to use these libraries.
+
+## Session Management
+
+*   At the end of each work session, update the `session_log.md` file with a summary of the progress made and the agreed-upon next steps.

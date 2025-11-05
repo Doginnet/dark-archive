@@ -36,3 +36,10 @@ that will interchangably stop playback of other tracks that interfere with the c
 - Tailwind
 - lucide-react
 - shadnc
+
+## TODO
+
+- [ ] Integrate a logo into the main header component.
+- [ ] Implement unique styling for each `GenreCard` (colors, title fonts) based on its theme.
+- [ ] Design and implement a custom mouse pointer.
+- [ ] Design and implement a global custom audio player with shuffle, play/pause, next/prev, download, and a tracklist dropdown.

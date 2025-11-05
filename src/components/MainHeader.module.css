@@ -1,0 +1,31 @@
+/* Using classes instead of IDs or invalid tags for modularity */
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between; /* Spreads items out */
+  align-items: center; /* Vertically aligns items */
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.panel {
+  display: flex;
+  gap: 1.5rem; /* Adds space between list items */
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.headerItem {
+  /* Individual list item styles can go here if needed */
+}
+
+.headerLink {
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.headerLink:hover {
+  color: hsl(var(--foreground));
+}

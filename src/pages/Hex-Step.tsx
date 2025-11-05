@@ -69,7 +69,7 @@ const HexStepPage = () => {
         <div className="container mx-auto px-4 py-6">
           {/* Main Title - Neon cyan with glow effect */}
           <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
-            HEX STEP
+            HEX_STEP
           </h1>
           {/* Subtitle - White text */}
           <p className="text-foreground/70 mt-2 text-sm md:text-base tracking-wide">
