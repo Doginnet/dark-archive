@@ -50,8 +50,8 @@ const tracks: Track[] = [
   },
   {
     id: "4",
-    title: "Anxios",
-    description: "A nervoutic beat haunted by the ghost of the underground",
+    title: "Provide",
+    description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
     audioUrl: "audio/Strudel.mp3",
     imageUrl: trackCover4,
   }
@@ -69,11 +69,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           {/* Main Title - Neon green with glow effect */}
           <h1 className="text-4xl md:text-5xl font-bold text-accent neon-glow tracking-tight">
-            AUDIO ARCHIVE
+            DARK ARCHIVE
           </h1>
           {/* Subtitle - White text */}
           <p className="text-foreground/70 mt-2 text-sm md:text-base tracking-wide">
-            Dark techno compositions / Minimalist soundscapes
+            Cursed loops / Haunted soundscapes
           </p>
         </div>
       </header>
