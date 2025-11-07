@@ -49,12 +49,22 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Default Theme-specific Colors */
+    --primary: 140 70% 40%;
+    --primary-foreground: 220 15% 5%;
+    --accent: 150 100% 45%;
+    --accent-foreground: 220 15% 5%;
+    --ring: 150 100% 45%;
+    --tetriary: 5 80% 50%;
+  }
+  /* THEME 1: Hex Step */
+  [data-theme="hex-step"] {
     --primary: 190 90% 40%;
     --primary-foreground: 220 15% 5%;
     --accent: 190 100% 45%;
     --accent-foreground: 220 15% 5%;
     --ring: 190 100% 45%;
   }
+
 
   /* THEME 2: Mellow Tapes */
   [data-theme="mellow-tapes"] {

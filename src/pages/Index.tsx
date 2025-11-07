@@ -4,6 +4,7 @@ import trackCover1 from "@/assets/track-cover-1.jpg";
 import trackCover2 from "@/assets/track-cover-2.jpg";
 import trackCover3 from "@/assets/track-cover-3.jpg";
 import trackCover4 from "@/assets/track-cover-7.jpg";
+import trackCover5 from "@/assets/genre-mellow-tapes.jpg";
 
 const genres = [
   {
@@ -29,6 +30,12 @@ const genres = [
     description: "A fusion of UK Garage rhythms with eerie, ghostly atmospheres and deep sub-bass.",
     imageUrl: trackCover4,
     linkUrl: "/haunted-garrage",
+  }, 
+  {
+    title: "Low Down",
+    description: "A lost and found chill hop, LoFi breeze and shallow reverberations.",
+    imageUrl: trackCover5,
+    linkUrl: "/lowdown",
   },
 ];
 

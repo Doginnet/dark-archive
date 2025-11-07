@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import HexStepPage from "./pages/Hex-Step";
 import MellowTapesPage from "./pages/Mellow-Tapes";
 import DarkCutPage from "./pages/Dark-Cut";
+import LowDownPage from "./pages/Low-Down";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/hex-step" element={<HexStepPage />} /> 
           <Route path="/mellow-tapes" element={<MellowTapesPage />} /> 
           <Route path="/dark-cut" element={<DarkCutPage />} />
+          <Route path="/lowdown" element={<LowDownPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
