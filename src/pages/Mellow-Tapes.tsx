@@ -9,6 +9,8 @@ import trackCover1 from "@/assets/track-cover-5.jpg";
 import trackCover2 from "@/assets/track-cover-6.jpg";
 import trackCover3 from "@/assets/track-cover-4.jpg";
 import trackCover4 from "@/assets/track-cover-9.jpg";
+import trackCover5 from "@/assets/track-cover-19.jpg";
+import trackCover6 from "@/assets/track-cover-21.jpg";
 
 /* ===========================================
    TRACK DATA STRUCTURE
@@ -36,25 +38,39 @@ const tracks: Track[] = [
   },
   {
     id: "2",
-    title: "Lunar Cycles",
+    title: "Severance",
     description: "A rhythmic and percussive track with a driving beat, perfect for a late-night coding session.",
-    audioUrl: "/audio/1-3.mp3",
+    audioUrl: "/audio/mellow-tapes/chopped_voc_2.mp3",
     imageUrl: trackCover2,
   },
   {
     id: "3",
-    title: "Foolmoon",
+    title: "Reckognition",
     description: "An atmospheric and ambient track with a sense of wonder and exploration.",
-    audioUrl: "/audio/foolmoon.mp3",
+    audioUrl: "/audio/mellow-tapes/voc_and_pads.mp3",
     imageUrl: trackCover3,
   },
   {
     id: "4",
-    title: "Provide",
+    title: "Procure",
     description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
-    audioUrl: "audio/Strudel.mp3",
+    audioUrl: "audio/chords_only_2.mp3",
+    imageUrl: trackCover5,
+  }, 
+  {
+    id: "5",
+    title: "Reverance",
+    description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
+    audioUrl: "audio/mellow-tapes/chords_only.mp3",
+    imageUrl: trackCover6,
+  }, 
+  {
+    id: "6",
+    title: "Side Prophecy",
+    description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
+    audioUrl: "audio/side_prophecy.mp3",
     imageUrl: trackCover4,
-  }
+  },
 ];
 
 /* ===========================================
