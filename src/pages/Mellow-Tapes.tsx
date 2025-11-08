@@ -54,7 +54,7 @@ const tracks: Track[] = [
     id: "4",
     title: "Procure",
     description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
-    audioUrl: "audio/chords_only_2.mp3",
+    audioUrl: "audio/mellow-tapes/chords_only_2.mp3",
     imageUrl: trackCover5,
   }, 
   {
@@ -68,7 +68,7 @@ const tracks: Track[] = [
     id: "6",
     title: "Side Prophecy",
     description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
-    audioUrl: "audio/side_prophecy.mp3",
+    audioUrl: "audio/mellow-tapes/side_prophecy.mp3",
     imageUrl: trackCover4,
   },
 ];
