@@ -9,6 +9,7 @@ import trackCover1 from "@/assets/track-cover-1.jpg";
 import trackCover2 from "@/assets/track-cover-2.jpg";
 import trackCover3 from "@/assets/track-cover-3.jpg";
 import trackCover4 from "@/assets/track-cover-7.jpg";
+import trackCover5 from "@/assets/track-cover-8.jpg";
 
 /* ===========================================
    TRACK DATA STRUCTURE
@@ -54,7 +55,14 @@ const tracks: Track[] = [
     description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
     audioUrl: "audio/Strudel.mp3",
     imageUrl: trackCover4,
-  }
+  },
+  {
+    id: "5",
+    title: "Retold Fiction",
+    description: "A nervoutic beat loop haunted by the liminal ghosts of the concrete passages ",
+    audioUrl: "audio/Retold Fiction.mp3",
+    imageUrl: trackCover5,
+  },
 ];
 
 /* ===========================================
